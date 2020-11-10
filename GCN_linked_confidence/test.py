@@ -149,7 +149,7 @@ def testcluster(feat_path, label_path, knn_graph_path, checkpoint, k_at_hop, act
     #         knn_graph_dict[-1][n] = []
 
     # criterion = nn.CrossEntropyLoss().cuda()
-     criterion = nn.CrossEntropyLoss()
+    criterion = nn.CrossEntropyLoss()
 
     # NOTE: [STEP 2: GCN Net]function to predict
     # edges, scores, pred_dict = validate(valloader, net, criterion, print_freq, k_at_hop)
